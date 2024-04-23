@@ -1,0 +1,14 @@
+node{
+	stage('build'){
+		sh phyton3 -v'}
+	}
+	stage('test'){
+			git branch: 'main', url:https://github.com/arthur-dp/atividadesomativa.git
+			sh 'phyton3 hello.py'
+	}
+	stage('deploy'){
+		echo "acabou :)"
+	}
+
+
+}
